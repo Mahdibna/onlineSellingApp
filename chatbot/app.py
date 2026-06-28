@@ -26,7 +26,7 @@ EMBEDDINGS_PATH = "models/embeddings.npy"
 JSON_DATA_PATH = "data/data.json"
 
 # Initialize Groq client
-client = Groq(api_key=os.getenv("GROQ_API_KEY"))
+client = Groq(api_=os.getenv("GROQ_API_KEY"))
 
 # Load embedding model
 tokenizer = AutoTokenizer.from_pretrained(EMBEDDING_MODEL)
